@@ -14,3 +14,18 @@ code {
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+html {
+  @layer font-poppins, scroll-smooth;
+}
+input,
+textarea {
+  @apply bg-gray-300
+outline-none rounded-lg p-3;
+}
+
+::placeholder {
+  @apply text-lg;
+}
+::selection {
+  @apply bg-cyan-500;
+}
